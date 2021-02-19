@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Your profile</title>
+    <style>
+        body {
+            background: #E8F1C7; /* Цвет фона */
+            color: #383E38; /* Цвет текста */
+        }
+    </style>
+</head>
+<body>
+<h3>Your profile:</h3>
+<br/>
+<p th:text="${'Id: ' + user.getId()}">userId</p>
+<p th:text="${'Login: ' + user.getUsername()}">userId</p>
+<p th:text="${'Firstname: ' + user.getFirstname()}">userName</p>
+<p th:text="${'Surname: ' + user.getSurname()}">userSurname</p>
+<p th:text="${'Age: ' + user.getAge()}">userAge</p>
+<p th:text="${'Email: ' + user.getEmail()}">userEmail</p>
+<br/>
+<hr/>
+<br/>
+
+<p>
+    <a th:href="@{/logout}">
+        <input type="submit" value="Logout">
+    </a>
+</p>
+
+</body>
+</html>

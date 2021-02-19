@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            background: #E8F1C7; /* Цвет фона */
+            color: #383E38; /* Цвет текста */
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Welcome to my first Spring Security app!</h1>
+<br/>
+<p>Enter your username and password:</p>
+<div>
+    <form method="post" action="/login">
+        <input name="j_username"/>
+        <input name="j_password"/>
+        <input type="submit"/>
+    </form>
+</div>
+</body>
+</html>
